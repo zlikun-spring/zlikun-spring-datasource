@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 4
+      maximum-pool-size: 16
+      master:
+        jdbc-url: jdbc:mysql://192.168.3.96:13000/test?characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+        username: root
+        password: 123456
+      slave1:
+        jdbc-url: jdbc:mysql://192.168.3.96:13001/test?characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+        username: root
+        password: 123456
+      slave2:
+        jdbc-url: jdbc:mysql://192.168.3.96:13002/test?characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
+        username: root
+        password: 123456
+
