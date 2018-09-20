@@ -17,4 +17,3 @@ spring:
         jdbc-url: jdbc:mysql://192.168.3.96:13002/test?characterEncoding=UTF-8&allowMultiQueries=true&useSSL=false
         username: root
         password: 123456
-
